@@ -5,8 +5,7 @@ async function registrarVisita(user) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        apikey: CONFIG.supabaseKey,
-        Authorization: "Bearer " + CONFIG.supabaseKey
+        apikey: CONFIG.supabaseKey
       },
       body: JSON.stringify({
         p_id: user.id,
