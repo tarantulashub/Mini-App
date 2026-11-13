@@ -1,8 +1,8 @@
 // ÚNICO archivo que editas para textos, claves y botones.
 const CONFIG = {
   // Supabase (Project Settings → API). Usa SOLO la clave "anon public".
-  supabaseUrl: "PEGA_AQUI_TU_PROJECT_URL",
-  supabaseKey: "PEGA_AQUI_TU_ANON_KEY",
+  supabaseUrl: "https://cfsffkcgktyrjtnegfyf.supabase.co",
+  supabaseKey: "sb_publishable_HX8dXq8v7_HO55r3SPIbPw_Wwc4b87u",
 
   logo: "img/logo.png",
 
