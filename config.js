@@ -23,6 +23,6 @@ const CONFIG = {
   botones: [
     { texto: "Ver producto",    tipo: "pagina", destino: "productos.html" },
     { texto: "Soporte",         tipo: "pagina", destino: "soporte.html" },
-    { texto: "Más información", tipo: "enlace", destino: "https://telegra.ph/PEGA-TU-PAGINA" }
+    { texto: "Más información", tipo: "enlace", destino: "https://telegra.ph/preguntas-y-respuestas-08-20" }
   ]
 };
