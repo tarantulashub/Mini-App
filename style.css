@@ -1,0 +1,33 @@
+/* Colores neutros: aquí se cambia todo el diseño después */
+:root {
+  --fondo: #ffffff; --texto: #1c1c1e; --suave: #6b6b70;
+  --boton: #f0f0f3; --borde: #dcdce0; --acento: #2b6cff;
+}
+:root[data-tema="oscuro"] {
+  --fondo: #17181b; --texto: #f2f2f4; --suave: #9a9aa2;
+  --boton: #24262b; --borde: #34363c; --acento: #6c9bff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+  background: var(--fondo); color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: env(safe-area-inset-top, 0) 20px env(safe-area-inset-bottom, 0);
+  transition: background .2s, color .2s;
+}
+header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+#logo { height: 40px; width: auto; max-width: 140px; object-fit: contain; }
+#tema {
+  background: var(--boton); border: 1px solid var(--borde); color: var(--texto);
+  width: 42px; height: 42px; border-radius: 50%; font-size: 18px; cursor: pointer;
+}
+main { flex: 1; display: flex; flex-direction: column; padding-top: 24px; }
+h1 { margin: 0 0 40px; font-size: 1.7rem; line-height: 1.25; text-align: left; }
+#pregunta { text-align: center; color: var(--suave); font-size: 1.05rem; margin: 0 0 20px; }
+#botones { display: flex; flex-direction: column; gap: 12px; max-width: 420px; width: 100%; margin: 0 auto; }
+#botones button {
+  background: var(--boton); color: var(--texto); border: 1px solid var(--borde);
+  border-radius: 14px; padding: 16px; font-size: 1rem; cursor: pointer;
+}
+#botones button:active { background: var(--acento); color: #fff; }
+button:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
